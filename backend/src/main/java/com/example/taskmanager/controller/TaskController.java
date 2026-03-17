@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
-@RestController 
+@CrossOrigin(origins = {
+    "http://127.0.0.1:5173",
+    "http://localhost:5173"
+})
+@RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "http://localhost:5173")
 public class TaskController {
 
     private final TaskService taskService;
