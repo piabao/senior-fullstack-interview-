@@ -4,8 +4,9 @@ import com.example.taskmanager.model.Task;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.ArrayList;
 
-@service
+@Service 
 public class TaskService {
     private final List<Task> tasks = new ArrayList<>();
 

@@ -2,7 +2,7 @@ package com.example.taskmanager.model;
 
 public class Task {
     private long id;
-    private Strng title;
+    private String title;
     private boolean completed;
 
     public Task() {
